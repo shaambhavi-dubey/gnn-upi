@@ -1,0 +1,10 @@
+{
+  "notebook": "06a_elliptic_xgboost_tabular",
+  "features_used": "Elliptic's 165 given features",
+  "split": "time-based (timestep <=34 train, >34 test)",
+  "precision_fraud": 0.87,
+  "recall_fraud": 0.73,
+  "f1_fraud": 0.795,
+  "pr_auc": 0.803,
+  "note": "Outperforms published GCN F1~0.70 on Elliptic using tabular features alone"
+}
