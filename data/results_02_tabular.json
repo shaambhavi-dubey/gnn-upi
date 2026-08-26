@@ -1,0 +1,12 @@
+{
+  "notebook": "02_baseline_xgboost_tabular",
+  "features_used": [
+    "account_age_days",
+    "avg_amt",
+    "max_amount"
+  ],
+  "precision_fraud": 0.68,
+  "recall_fraud": 0.84,
+  "f1_fraud": 0.75,
+  "pr_auc": 0.854
+}
