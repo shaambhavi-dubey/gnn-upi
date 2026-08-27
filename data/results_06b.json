@@ -1,0 +1,10 @@
+results_06b = {
+   "notebook": "06b_elliptic_xgboost_graphstats",
+    "features_used": "Elliptic's 165 features + in_degree, out_degree, pagerank",
+    "split": "time-based (timestep <=34 train, >34 test)",
+    "precision_fraud": 0.85,
+    "recall_fraud": 0.72,
+    "f1_fraud": 0.783,
+    "pr_auc": 0.797,
+    "note": "No meaningful improvement over tabular-only (06a: F1=0.795) -- unlike synthetic data, suggesting Elliptic's given features may already encode structural information"
+}
