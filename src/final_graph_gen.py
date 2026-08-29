@@ -53,3 +53,8 @@ def generate_synthetic_graph(n_legit=10000, n_rings=250,
         DirGr.nodes[mule]['label'] = 1
 
     return DirGr
+configs = {
+    "easy (original)": {"sources_range": (15, 40), "fraud_amt_range": None},
+    "medium (smaller rings)": {"sources_range": (8, 20), "fraud_amt_range": None},
+    "hard (camouflaged amounts)": {"sources_range": (8, 20), "fraud_amt_range": "camouflaged"},
+}
