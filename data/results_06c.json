@@ -1,0 +1,12 @@
+results_06c = {
+    "notebook": "06c_elliptic_gcn",
+    "architecture": "2-layer GCNConv (paper-matched), hidden=100, no dropout, lr=0.001",
+    "epochs": 400,
+    "class_weighting": "0.3/0.7 licit/illicit (paper-matched)",
+    "split": "time-based (timestep <=34 train, >34 test)",
+    "test_f1": 0.492,
+    "test_pr_auc": 0.478,
+    "val_f1_tuned_threshold": 0.828,
+    "comparison_to_paper": "Paper's plain GCN: F1=0.628. Our result (F1=0.492) is lower even after matching architecture/epochs/weighting.",
+    "likely_explanation": "Test window (timesteps 35-49) includes the dark market shutdown event at timestep 43, documented in Weber et al. as causing performance degradation across all methods in their own experiments."
+}
