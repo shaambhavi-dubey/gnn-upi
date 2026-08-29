@@ -1,0 +1,6 @@
+results_07 = {
+    "notebook": "07_robustness_sweep",
+    "configs_tested": list(configs.keys()),
+    "results": sweep_results_clean,
+    "key_finding": "GraphSAGE most robust across difficulty levels (F1: 1.00 -> 0.83 -> 0.85), outperforming GCN at every level. XGBoost+graphstats also robust to camouflage (relies on structure, not amount) but more sensitive to ring size reduction. XGBoost tabular-only highly unstable, dependent on incidental amount-distribution separation rather than genuine fraud signal."
+}
