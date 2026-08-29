@@ -86,12 +86,12 @@ Random Forest F1=0.788.
    preserves that signal.
 
 3. **GraphSAGE generalizes to entirely unseen accounts.** In a strict inductive test
-   — 1,500 nodes and their edges fully removed during training, reintroduced only at
+   : 1,500 nodes and their edges fully removed during training, reintroduced only at
    test time — GraphSAGE scored F1=0.987. GCN and XGBoost+graphstats cannot be
    meaningfully tested this way at all: both require the complete graph (or
    precomputed graph statistics over it) to score any node.
 
-4. **Simple graph statistics are a very strong, cheap baseline** — nearly matching
+4. **Simple graph statistics are a very strong, cheap baseline**  nearly matching
    full GNNs on "easy" fraud patterns. The real GNN advantage isn't raw accuracy on
    easy data; it's robustness under harder conditions and the ability to generalize
    to new accounts without retraining or recomputing statistics over the whole graph.
@@ -103,7 +103,7 @@ Random Forest F1=0.788.
    depend on amount separability at all.
 
 6. **Consistent with the original Elliptic paper's own finding** that tree-based
-   methods (Random Forest) outperformed GCN — our results independently reproduce
+   methods (Random Forest) outperformed GCN; our results independently reproduce
    this pattern on both a synthetic and a real dataset.
 
 ## Repository structure
@@ -131,10 +131,10 @@ gnn-upi/
   amount-based shortcut in some runs, which is exactly what the "camouflaged" sweep
   config was designed to remove.
 - Elliptic's test window (timesteps 35–49) includes a documented dark-market shutdown
-  event, which the original paper's authors note degrades all models' performance —
+  event, which the original paper's authors note degrades all models' performance,
   likely explains part of the gap between our GCN result and the original paper's.
 - GCN's neighbor-averaging is a poor architectural fit for anomaly patterns defined by
-  a node looking *different* from its neighbors (heterophily) — a known, documented
+  a node looking *different* from its neighbors (heterophily); a known, documented
   limitation of vanilla GCN for fraud/anomaly detection tasks.
 
 ## Future work
@@ -144,7 +144,7 @@ gnn-upi/
   sparsity simultaneously
 - Full-scale production/MLOps extension: Kafka-based real-time ingestion, precomputed
   GNN embeddings served via Redis for sub-50ms live scoring, periodic offline
-  retraining — deliberately scoped out of this research phase
+  retraining deliberately scoped out of this research phase, will do later 
 
 ## References
 
