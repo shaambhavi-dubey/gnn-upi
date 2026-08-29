@@ -1,0 +1,11 @@
+results_06d = {
+    "notebook": "06d_elliptic_graphsage",
+    "architecture": "2-layer SAGEConv, hidden=64, dropout=0.5",
+    "epochs": 400,
+    "class_weighting": "sqrt(imbalance_ratio)",
+    "split": "time-based (timestep <=34 train/val, >34 test), transductive (not inductive-tested here)",
+    "val_f1_tuned_threshold": 0.915,
+    "test_f1_tuned_threshold": 0.675,
+    "test_pr_auc": 0.675,
+    "note": "Clearly outperforms GCN (F1=0.492) on Elliptic, consistent with synthetic-data finding that GraphSAGE's concatenation approach avoids GCN's neighbor-averaging dilution problem"
+}
