@@ -2,7 +2,7 @@
 
 Investigating whether Graph Neural Networks (GCN, GraphSAGE) meaningfully outperform
 tabular machine learning (XGBoost) at detecting fraud rings and mule accounts in
-payment networks — and, if so, under what conditions that advantage actually holds up.
+payment networks; and, if so, under what conditions that advantage actually holds up.
 
 ## The problem
 
