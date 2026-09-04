@@ -162,13 +162,13 @@ on two separate datasets land on the same conclusion independently.
 ```
 gnn-upi/
 ├── notebooks/
-│   ├── 01_synthetic_graph_gen.ipynb        builds the synthetic UPI graph and fraud rings
-│   ├── 02_baseline_xgboost_tabular.ipynb   XGBoost, no graph information
-│   ├── 03_baseline_xgboost_graphstats.ipynb XGBoost plus degree and PageRank
-│   ├── 04_gcn.ipynb                        GCN, transductive
-│   ├── 05_graphsage.ipynb                  GraphSAGE, inductive test on unseen nodes
-│   ├── 06_elliptic_validation.ipynb        all four models rerun on Elliptic
-│   └── 07_robustness_sweep.ipynb           difficulty sweep, seed variance, t-tests
+│   ├── gnn-upi-graph.ipynb        builds the synthetic UPI graph and fraud rings
+│   ├── gnn-upi-xgb.ipynb   XGBoost, no graph information
+│   ├── gnn-upi-xgb-graphf.ipynb XGBoost plus degree and PageRank
+│   ├── gnn-upi-gcn.ipynb                        GCN, transductive
+│   ├── gnn-upi-graphsage.ipynb                  GraphSAGE, inductive test on unseen nodes
+│   ├── gnn-upi-elliptic(1).ipynb        all four models rerun on Elliptic
+│   └── gnn-upi-final.ipynb           difficulty sweep, seed variance, t-tests
 ├── src/
 │   └── graph_gen.py                        reusable synthetic graph generator
 ├── data/                                   saved graphs, features, and results (JSON)
