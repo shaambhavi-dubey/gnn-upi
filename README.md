@@ -162,7 +162,6 @@ on two separate datasets land on the same conclusion independently.
 ```
 gnn-upi/
 ├── notebooks/
-│   ├── gnn-upi-graph.ipynb        builds the synthetic UPI graph and fraud rings
 │   ├── gnn-upi-xgb.ipynb   XGBoost, no graph information
 │   ├── gnn-upi-xgb-graphf.ipynb XGBoost plus degree and PageRank
 │   ├── gnn-upi-gcn.ipynb                        GCN, transductive
